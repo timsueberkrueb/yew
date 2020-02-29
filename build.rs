@@ -16,7 +16,7 @@ pub fn main() {
         panic!("cargo-web is not compatible with web-sys");
     }
 
-    let target_arch = env::var("CARGO_CFG_TARGET_ARCH").unwrap_or_default();
+    /*let target_arch = env::var("CARGO_CFG_TARGET_ARCH").unwrap_or_default();
     let using_wasm_bindgen = target_arch == "wasm32" && !using_cargo_web && !using_wasi;
     if !using_wasm_bindgen && cfg!(all(feature = "web_sys", not(feature = "doc_test"))) {
         let target = env::var("TARGET").unwrap_or_default();
@@ -24,5 +24,5 @@ pub fn main() {
             "Selected target `{}` is not compatible with web-sys",
             target
         );
-    }
+    }*/
 }
